@@ -1,86 +1,190 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campelo Systems</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">Campelo Desenvolvimento de Sistemas</div>
-            <nav>
-                <a href="#servicos">Serviços</a>
-                <a href="#portfolio">Portfólio</a>
-                <a href="#depoimentos">Depoimentos</a>
-                <a href="#contato">Contato</a>
+    <header class="navbar">
+        <div class="container flex-between">
+            <div class="logo">
+                <img src="img/logo-principal.png" alt="logo-header" class="logo header">
+            </div>
+            <nav class="nav-menu">
+                <a href="#">Home</a>
+                <a href="#">Produto</a>
+                <a href="#">Benefícios</a>
+                <a href="#">Contato</a>
             </nav>
+            <button class="menu-toggle">
+                ☰
+            </button>
         </div>
-        <section class="hero">
-            <h1>Transformando ideias em soluções digitais</h1>
-            <p>Desenvolvemos sites e sistemas com foco em resultado, design e performance.</p>
-            <a href="#contato" class="btn-primary">Comece agora</a>
-        </section>
     </header>
-
     <main>
-        <section id="servicos" class="features">
-            <h2>Nossos serviços</h2>
-            <div class="feature-cards">
-                <article>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites responsivos e modernos para você se destacar online.</p>
-                </article>
-                <article>
-                    <h3>Aplicativos</h3>
-                    <p>Soluções móveis e webapps feitos para escalar com seu negócio.</p>
-                </article>
-                <article>
-                    <h3>Consultoria</h3>
-                    <p>Planejamento estratégico para transformar processos em resultados.</p>
-                </article>
+        <section class="hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>
+                            Construa Landing Pages Muito Mais Rápido
+                        </h1>
+                        <p class="text-muted">
+                            Um sistema de layout reutilizável para criar páginas profissionais em minutos.
+                        </p>
+                        <div class="flex-align" style="gap:16px;">
+                            <a class="btn btn-primary">
+                                Começar agora
+                            </a>
+                            <a class="btn">
+                                Saber mais
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/hero.png" alt="Hero image">
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="section">
+            <div class="container">
 
-        <section id="portfolio" class="portfolio">
-            <h2>Portfólio</h2>
-            <p>Alguns projetos recentes que entregamos com tecnologia e criatividade.</p>
-            <div class="portfolio-grid">
-                <div class="project">Projeto A</div>
-                <div class="project">Projeto B</div>
-                <div class="project">Projeto C</div>
+                <div class="grid grid-2 about">
+                    <div>
+                        <img src="assets/about.png" alt="about">
+                    </div>
+
+                    <div class="about-content">
+                        <h2 class="mb-md">
+                            Sobre Nosso Sistema
+                        </h2>
+
+                        <p class="text-muted mb-md">
+                            Criamos um sistema modular para desenvolvedores construírem landing pages de forma rápida e
+                            organizada.
+                        </p>
+
+                        <p class="text-muted">
+                            Utilizando padrões reutilizáveis, você consegue desenvolver páginas profissionais em menos
+                            tempo.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
+        <section class="section">
+            <div class="container">
 
-        <section id="depoimentos" class="testimonials">
-            <h2>Depoimentos</h2>
-            <blockquote>
-                <p>"A Campelo Systems entregou além do esperado: prazo, qualidade e suporte excepcionais."</p>
-                <footer>– Cliente satisfeito</footer>
-            </blockquote>
+                <div class="text-center mb-lg">
+                    <h2>Nossos Serviços</h2>
+
+                    <p class="text-muted">
+                        Soluções para acelerar seu desenvolvimento
+                    </p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card service-card">
+
+                        <h3 class="mb-sm">Desenvolvimento</h3>
+
+                        <p class="text-muted">
+                            Criação de landing pages rápidas e responsivas.
+                        </p>
+                    </div>
+
+                    <div class="card service-card">
+                        <h3 class="mb-sm">UI Estruturado</h3>
+
+                        <p class="text-muted">
+                            Layout organizado com padrões reutilizáveis.
+                        </p>
+                    </div>
+
+                    <div class="card service-card">
+                        <h3 class="mb-sm">Performance</h3>
+
+                        <p class="text-muted">
+                            Páginas leves e otimizadas para conversão.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </section>
-
-        <section id="contato" class="contact">
-            <h2>Fale conosco</h2>
-            <p>Pronto para levar seu projeto ao próximo nível? Envie uma mensagem.</p>
-            <form>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Seu email">
-
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="4" placeholder="O que você precisa?"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+        <section class="section cta">
+            <div class="container text-center">
+                <h2 class="mb-md">
+                    Comece a construir suas landing pages hoje
+                </h2>
+                <p class="text-muted mb-lg">
+                    Use um sistema de layout profissional para acelerar sua produtividade.
+                </p>
+                <a class="btn btn-primary">
+                    Começar agora
+                </a>
+            </div>
         </section>
     </main>
+    <footer class="footer">
 
-    <footer>
-        <p>&copy; 2026 Campelo Systems. Todos os direitos reservados.</p>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <img src="img/logo-branca.png" alt="logo-footer" class="logo footer">
+
+                    <p class="text-muted">
+                        Sistema profissional para construção de landing pages.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h4 class="mb-sm">Links</h4>
+
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Produto</a></li>
+                        <li><a href="#">Benefícios</a></li>
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h4 class="mb-sm">Contato</h4>
+
+                    <ul class="footer-links">
+                        <li>email@email.com</li>
+                        <li>São Paulo</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="text-muted">
+                    © 2026 Sua Empresa
+                </p>
+
+            </div>
+
+        </div>
+
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
