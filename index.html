@@ -5,31 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="navbar">
-        <div class="container flex-between">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo-header" class="logo header">
-            </div>
-            <nav class="nav-menu">
-                <a href="#">Home</a>
-                <a href="#">Produto</a>
-                <a href="#">Benefícios</a>
-                <a href="#">Contato</a>
-            </nav>
-
-            <div class="flex-align" style="gap:16px;">
-                <a class="btn">
-                    Saiba mais
-                </a>
-            </div>
-
-            <button class="menu-toggle">
-                ☰
+        <title>Campelo Systems — Software Premium</title>
+        <div class="container site-header__inner">
+            <a href="#" class="brand">
+                <span class="brand__mark">Campelo</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="hamburger" aria-hidden="true"></span>
             </button>
+            <nav class="site-navigation" id="primary-navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-ghost nav-cta">Solicitar demo</a>
+            </nav>
         </div>
     </header>
     <main>
@@ -64,140 +57,137 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section about" id="about">
             <div class="container">
-
-                <div class="grid grid-2 about">
-
-
-                    <div class="about-content">
-                        <h2 class="mb-md">
-                            ABOUT US
-                        </h2>
-
-                        <p class="text-muted mb-md">
-                            Criamos um sistema modular para desenvolvedores construírem landing pages de forma rápida e
-                            organizada.
-                        </p>
-
-                        <p class="text-muted">
-                            Utilizando padrões reutilizáveis, você consegue desenvolver páginas profissionais em menos
-                            tempo.
-                        </p>
-                    </div>
-
-                    <div>
-                        <img src="assets/about.png" alt="about">
+                <div class="section-header">
+                    <span class="section-label">Sobre</span>
+                    <h2>Software premium para equipes que buscam desempenho e elegância.</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Soluções de software com foco em experiência e resultado.</p>
+                </div>
+                <div class="grid grid-2 about-grid">
+                    <article class="feature-card">
+                        <h3>Design estratégico</h3>
+                        <p class="text-muted">Projetamos interfaces limpas para que sua marca seja percebida como moderna e confiável.</p>
+                    </article>
+                    <div class="about-image">
+                        <img src="assets/about.png" alt="Ilustração de software premium">
                     </div>
                 </div>
-
             </div>
         </section>
-        <section class="section">
+        <section class="section services" id="services">
             <div class="container">
-
-                <div class="text-center mb-lg">
-                    <h2>Nossos Serviços</h2>
-
-                    <p class="text-muted">
-                        Soluções para acelerar seu desenvolvimento
-                    </p>
+                <div class="section-header text-center">
+                    <span class="section-label">Serviços</span>
+                    <h2>O que entregamos</h2>
+                    <p class="text-muted">Do lançamento de produtos ao crescimento digital: soluções pensadas para marcas sofisticadas.</p>
                 </div>
-
-                <div class="grid grid-3">
-                    <div class="card service-card">
-
-                        <h3 class="mb-sm">Desenvolvimento</h3>
-
-                        <p class="text-muted">
-                            Criação de landing pages rápidas e responsivas.
-                        </p>
-                    </div>
-
-                    <div class="card service-card">
-                        <h3 class="mb-sm">UI Estruturado</h3>
-
-                        <p class="text-muted">
-                            Layout organizado com padrões reutilizáveis.
-                        </p>
-                    </div>
-
-                    <div class="card service-card">
-                        <h3 class="mb-sm">Performance</h3>
-
-                        <p class="text-muted">
-                            Páginas leves e otimizadas para conversão.
-                        </p>
-                    </div>
+                <div class="grid grid-3 service-grid">
+                    <article class="card service-card">
+                        <h3>Desenvolvimento</h3>
+                        <p class="text-muted">Aplicações web robustas, performance otimizada e experiência fluida em todas as telas.</p>
+                    </article>
+                    <article class="card service-card">
+                        <h3>Design de produto</h3>
+                        <p class="text-muted">Arquitetura visual e usabilidade alinhadas para gerar confiança e conversão.</p>
+                    </article>
+                    <article class="card service-card">
+                        <h3>Consultoria</h3>
+                        <p class="text-muted">Roadmaps digitais com foco em escalabilidade, eficiência e resultados mensuráveis.</p>
+                    </article>
                 </div>
-
             </div>
         </section>
-        <section class="section cta">
+        <section class="section benefits" id="benefits">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">Benefícios</span>
+                    <h2>Porque escolher um serviço de software premium</h2>
+                    <p class="text-muted">Processos claros, entregas certeiras e tecnologia confiável para sua empresa avançar.</p>
+                </div>
+                <div class="grid grid-3 benefit-grid">
+                    <article class="feature-card">
+                        <h3>Agilidade</h3>
+                        <p class="text-muted">Ciclos curtos de desenvolvimento e decisões rápidas com alto padrão.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Escalabilidade</h3>
+                        <p class="text-muted">Estruturas preparadas para crescimento sem comprometer velocidade ou estabilidade.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Suporte</h3>
+                        <p class="text-muted">Acompanhamento contínuo para garantir que cada entrega funcione com excelência.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">Depoimentos</span>
+                    <h2>O que nossos clientes valorizam</h2>
+                </div>
+                <div class="grid grid-3 testimonial-grid">
+                    <article class="testimonial-card card">
+                        <p class="text-muted">"O trabalho entregou um produto digital com aparência premium e performance sólida desde o primeiro lançamento."</p>
+                        <strong>CFO, startup de software</strong>
+                    </article>
+                    <article class="testimonial-card card">
+                        <p class="text-muted">"O design discreto e o desenvolvimento rápido transformaram nossa percepção de marca."</p>
+                        <strong>Head de Produto</strong>
+                    </article>
+                    <article class="testimonial-card card">
+                        <p class="text-muted">"A comunicação foi clara, o cronograma foi cumprido e o resultado superou as expectativas."</p>
+                        <strong>CEO, agência digital</strong>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section cta" id="contact">
             <div class="container text-center">
-                <h2 class="mb-md">
-                    Comece a construir suas landing pages hoje
-                </h2>
-                <p class="text-muted mb-lg">
-                    Use um sistema de layout profissional para acelerar sua produtividade.
-                </p>
-                <a class="btn btn-primary">
-                    Começar agora
-                </a>
+                <span class="section-label">Conexão</span>
+                <h2>Vamos construir uma presença digital de alto padrão.</h2>
+                <p class="text-muted">Agende uma conversa e descubra como elevar seus serviços com tecnologia sofisticada.</p>
+                <a class="btn btn-primary" href="#">Solicitar demonstração</a>
             </div>
         </section>
     </main>
-    <footer class="footer">
-
-        <div class="container">
-
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="#" class="brand footer-brand__link">Campelo</a>
+                <p class="footer-copy text-muted">Software sofisticado para equipes que desejam impacto digital com elegância.</p>
+            </div>
             <div class="footer-grid">
-
-                <div>
-
-                    <img src="img/logo-brancac.png" alt="logo-footer" class="logo-footer">
-
-                    <p class="text-muted">
-                        Sistema profissional para construção de landing pages.
-                    </p>
-
-                </div>
-
-                <div>
-
-                    <h4 class="mb-sm">Links</h4>
-
+                <div class="footer-column">
+                    <h3>Empresa</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Produto</a></li>
-                        <li><a href="#">Benefícios</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#benefits">Recursos</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
                     </ul>
-
                 </div>
-
-                <div>
-
-                    <h4 class="mb-sm">Contato</h4>
-
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <address class="contact-info">
+                        <a href="mailto:contato@campelo.com">contato@campelo.com</a><br>
+                        <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+                    </address>
+                </div>
+                <div class="footer-column">
+                    <h3>Redes</h3>
                     <ul class="footer-links">
-                        <li>email@email.com</li>
-                        <li>São Paulo</li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
                     </ul>
-
                 </div>
-
             </div>
-
-            <div class="footer-bottom">
-
-                <p class="text-muted">
-                    © 2026 Sua Empresa
-                </p>
-
-            </div>
-
         </div>
-
+        <div class="footer-bottom">
+            <p class="text-muted">© 2026 Campelo Systems. Todos os direitos reservados.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
