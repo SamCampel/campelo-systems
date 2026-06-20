@@ -5,188 +5,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-        <title>Campelo Systems — Software Premium</title>
-        <div class="container site-header__inner">
-            <a href="#" class="brand">
-                <span class="brand__mark">Campelo</span>
-            </a>
-            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
-                <span class="hamburger" aria-hidden="true"></span>
-            </button>
-            <nav class="site-navigation" id="primary-navigation" aria-label="Menu principal">
-                <ul class="nav-list">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#benefits">Benefícios</a></li>
-                    <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-                <a href="#contact" class="btn btn-ghost nav-cta">Solicitar demo</a>
-            </nav>
-        </div>
-    </header>
+    <title>Campelo Systems</title>
+</head>
+
+<body>
     <main>
         <section class="hero section">
+            <header class="site-header">
+                <div class="container site-header__inner">
+                    <nav class="site-navigation" id="primary-navigation" aria-label="Menu principal">
+                        <a href="#" class="nav-logo">
+                            <img src="img/logo-brancac.png" alt="Logo Campelo">
+                        </a>
+                        <ul class="nav-list">
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#how-it-works">Como funciona</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"
+                        aria-controls="primary-navigation">
+                        <span class="hamburger" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </header>
             <div class="container">
-
                 <div class="badge">
                     <span class="dot"></span>
                     Disponível agora
                 </div>
                 <div class="hero-content">
-
                     <div class="hero-text">
                         <h1>
-                            Construa Landing Pages Muito Mais Rápido
+                            Sites e sistemas feitos para o seu negócio
                         </h1>
                         <p class="text-muted">
-                            Um sistema de layout reutilizável para criar páginas profissionais em minutos.
+                            Do site que atrai clientes ao sistema que organiza sua operação — tudo sob medida, sem
+                            complicação.
                         </p>
-                        <div class="flex-align" style="gap:16px;">
-                            <a class="btn">
-                                Começar agora
+                        <div class="hero__actions">
+                            <a class="btn btn-primary" href="#contact">
+                                Solicitar orçamento
                             </a>
-                            <a class="btn btn-primary">
+                            <a class="btn" href="#about">
                                 Saber mais
                             </a>
                         </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="img/logo-brancac.png" alt="Hero image">
-                    </div>
                 </div>
             </div>
         </section>
+
         <section class="section about" id="about">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">Sobre</span>
-                    <h2>Software premium para equipes que buscam desempenho e elegância.</h2>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Soluções de software com foco em experiência e resultado.</p>
+
+                    <h2>Sites e sistemas feitos para o seu negócio.</h2>
                 </div>
                 <div class="grid grid-2 about-grid">
-                    <article class="feature-card">
-                        <h3>Design estratégico</h3>
-                        <p class="text-muted">Projetamos interfaces limpas para que sua marca seja percebida como moderna e confiável.</p>
-                    </article>
+                    <div class="about-cards">
+                        <article class="feature-card">
+                            <span class="section-label">Sites</span>
+                            <h3>Leve seu comércio a outro nível</h3>
+                            <p class="text-muted">Um site bem feito passa confiança, atrai clientes e funciona como
+                                vendedor 24h — feito sob medida, sem complicação.</p>
+                        </article>
+                        <article class="feature-card">
+                            <span class="section-label">Sistemas</span>
+                            <h3>Controle seu negócio com praticidade</h3>
+                            <p class="text-muted">CRM para gerir clientes, ERP para controlar estoque e vendas. Simples,
+                                direto, sem burocracia.</p>
+                        </article>
+                    </div>
                     <div class="about-image">
-                        <img src="assets/about.png" alt="Ilustração de software premium">
+                            <canvas id="aboutChart" width="640" height="360" aria-label="Gráfico de desempenho" role="img"></canvas>
+                            <div id="chartTooltip" class="chart-tooltip" aria-hidden="true"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section services" id="services">
+
+        <section class="section numbers" id="numbers">
             <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-label">Serviços</span>
-                    <h2>O que entregamos</h2>
-                    <p class="text-muted">Do lançamento de produtos ao crescimento digital: soluções pensadas para marcas sofisticadas.</p>
-                </div>
-                <div class="grid grid-3 service-grid">
-                    <article class="card service-card">
-                        <h3>Desenvolvimento</h3>
-                        <p class="text-muted">Aplicações web robustas, performance otimizada e experiência fluida em todas as telas.</p>
+                <div class="grid grid-3 numbers-grid">
+                    <article class="number-card text-center">
+                        <span class="number-big">+10</span>
+                        <p class="text-muted">projetos entregues</p>
                     </article>
-                    <article class="card service-card">
-                        <h3>Design de produto</h3>
-                        <p class="text-muted">Arquitetura visual e usabilidade alinhadas para gerar confiança e conversão.</p>
+                    <article class="number-card text-center">
+                        <span class="number-big">5 dias</span>
+                        <p class="text-muted">prazo médio de entrega</p>
                     </article>
-                    <article class="card service-card">
-                        <h3>Consultoria</h3>
-                        <p class="text-muted">Roadmaps digitais com foco em escalabilidade, eficiência e resultados mensuráveis.</p>
+                    <article class="number-card text-center">
+                        <span class="number-big">100%</span>
+                        <p class="text-muted">suporte pós-entrega</p>
                     </article>
                 </div>
             </div>
         </section>
-        <section class="section benefits" id="benefits">
+
+        <section class="section how-it-works" id="how-it-works">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-label">Benefícios</span>
-                    <h2>Porque escolher um serviço de software premium</h2>
-                    <p class="text-muted">Processos claros, entregas certeiras e tecnologia confiável para sua empresa avançar.</p>
+                    <h2>Do primeiro contato à entrega em 3 passos.</h2>
                 </div>
-                <div class="grid grid-3 benefit-grid">
-                    <article class="feature-card">
-                        <h3>Agilidade</h3>
-                        <p class="text-muted">Ciclos curtos de desenvolvimento e decisões rápidas com alto padrão.</p>
+                <div class="steps">
+                    <article class="step">
+                        <span class="step-num">01</span>
+                        <div class="step-text">
+                            <h3>Você conta o que precisa</h3>
+                            <p class="text-muted">Uma conversa rápida pelo WhatsApp já é suficiente para entendermos seu
+                                negócio e o que faz sentido para você.</p>
+                        </div>
                     </article>
-                    <article class="feature-card">
-                        <h3>Escalabilidade</h3>
-                        <p class="text-muted">Estruturas preparadas para crescimento sem comprometer velocidade ou estabilidade.</p>
+                    <article class="step">
+                        <span class="step-num">02</span>
+                        <div class="step-text">
+                            <h3>Desenvolvemos juntos</h3>
+                            <p class="text-muted">Você acompanha o progresso, sugere ajustes e aprova cada etapa. Sem
+                                surpresas no final.</p>
+                        </div>
                     </article>
-                    <article class="feature-card">
-                        <h3>Suporte</h3>
-                        <p class="text-muted">Acompanhamento contínuo para garantir que cada entrega funcione com excelência.</p>
+                    <article class="step">
+                        <span class="step-num">03</span>
+                        <div class="step-text">
+                            <h3>Entrega e suporte</h3>
+                            <p class="text-muted">Seu site ou sistema no ar, com suporte para garantir que tudo funcione
+                                direitinho.</p>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
-        <section class="section testimonials" id="testimonials">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-label">Depoimentos</span>
-                    <h2>O que nossos clientes valorizam</h2>
-                </div>
-                <div class="grid grid-3 testimonial-grid">
-                    <article class="testimonial-card card">
-                        <p class="text-muted">"O trabalho entregou um produto digital com aparência premium e performance sólida desde o primeiro lançamento."</p>
-                        <strong>CFO, startup de software</strong>
-                    </article>
-                    <article class="testimonial-card card">
-                        <p class="text-muted">"O design discreto e o desenvolvimento rápido transformaram nossa percepção de marca."</p>
-                        <strong>Head de Produto</strong>
-                    </article>
-                    <article class="testimonial-card card">
-                        <p class="text-muted">"A comunicação foi clara, o cronograma foi cumprido e o resultado superou as expectativas."</p>
-                        <strong>CEO, agência digital</strong>
-                    </article>
-                </div>
-            </div>
-        </section>
+
         <section class="section cta" id="contact">
             <div class="container text-center">
-                <span class="section-label">Conexão</span>
-                <h2>Vamos construir uma presença digital de alto padrão.</h2>
-                <p class="text-muted">Agende uma conversa e descubra como elevar seus serviços com tecnologia sofisticada.</p>
-                <a class="btn btn-primary" href="#">Solicitar demonstração</a>
+                <h2>Pronto para começar?</h2>
+                <p class="text-muted">Manda uma mensagem agora — sem compromisso, sem enrolação.</p>
+                <a class="btn btn-primary btn-wpp" href="https://wa.me/5511967532456">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                        fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.126.556 4.121 1.527 5.849L.057 23.5l5.805-1.524A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.368l-.359-.214-3.724.977.995-3.638-.234-.374A9.818 9.818 0 1112 21.818z" />
+                    </svg>
+                    Falar pelo WhatsApp
+                </a>
+                <p class="text-muted cta-hint">Respondemos em menos de 1 hora em horário comercial.</p>
             </div>
         </section>
     </main>
+
     <footer class="site-footer">
         <div class="container footer-top">
             <div class="footer-brand">
-                <a href="#" class="brand footer-brand__link">Campelo</a>
-                <p class="footer-copy text-muted">Software sofisticado para equipes que desejam impacto digital com elegância.</p>
+                <a href="#" class="brand footer-brand__link">
+                    <img src="img/logo-brancac.png" alt="Logo Campelo">
+                </a>
+                <p class="footer-copy text-muted">Sites e sistemas feitos para o seu negócio — sem complicação.</p>
             </div>
             <div class="footer-grid">
                 <div class="footer-column">
                     <h3>Empresa</h3>
                     <ul class="footer-links">
                         <li><a href="#about">Sobre</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#benefits">Recursos</a></li>
-                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#how-it-works">Como funciona</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contato</h3>
                     <address class="contact-info">
-                        <a href="mailto:contato@campelo.com">contato@campelo.com</a><br>
-                        <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+                        <a href="mailto:campelosystems@gmail.com">campelosystems@gmail.com</a><br>
+                        <a href="tel:+5511967532456">+55 (11) 96753-2456</a>
                     </address>
                 </div>
                 <div class="footer-column">
                     <h3>Redes</h3>
                     <ul class="footer-links">
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/samuelccampelo/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/SamCampel" target="_blank">Github</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="text-muted">© 2026 Campelo Systems. Todos os direitos reservados.</p>
+            <p class="text-muted">© 2026 Campelo Systems. Todos os direitos reservados. </p>
         </div>
     </footer>
     <script src="script.js"></script>
